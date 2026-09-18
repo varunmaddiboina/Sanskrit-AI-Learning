@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SanskritAI - Learn Sanskrit</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            🕉️ SanskritAI
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#learn">Learn</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HOME SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="small-title">
+                SMART SANSKRIT LEARNING
+            </p>
+
+            <h1>
+                Learn Sanskrit
+                <br>
+                <span>the Smart Way</span>
+            </h1>
+
+            <p>
+                Learn Sanskrit vocabulary, meanings and
+                pronunciation through an interactive
+                learning application.
+            </p>
+
+            <button onclick="scrollToSection('learn')">
+                Start Learning →
+            </button>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="om">
+                ॐ
+            </div>
+
+            <h2>
+                नमस्ते
+            </h2>
+
+            <p>
+                Namaste
+            </p>
+
+            <small>
+                Greetings / Hello
+            </small>
+
+            <br>
+
+            <button onclick="speak('नमस्ते')">
+                🔊 Listen
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEARN SECTION -->
+
+    <section id="learn" class="section">
+
+        <h2>
+            📚 Learn Sanskrit Words
+        </h2>
+
+        <p class="section-subtitle">
+            Build your Sanskrit vocabulary one word at a time.
+        </p>
+
+
+        <div class="word-card">
+
+            <div>
+
+                <p class="label">
+                    SANSKRIT WORD
+                </p>
+
+                <h1 id="sanskritWord">
+                    जलम्
+                </h1>
+
+                <p id="wordMeaning">
+                    Water
+                </p>
+
+            </div>
+
+
+            <button onclick="speakCurrentWord()">
+                🔊 Pronounce
+            </button>
+
+
+            <button class="next-btn" onclick="nextWord()">
+                Next Word →
+            </button>
+
+        </div>
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-box">
+
+            <div class="progress-info">
+
+                <span>
+                    Learning Progress
+                </span>
+
+                <span id="progressText">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ SECTION -->
+
+    <section id="quiz" class="section light">
+
+        <h2>
+            🧠 Sanskrit Quiz
+        </h2>
+
+        <p class="section-subtitle">
+            Test what you have learned.
+        </p>
+
+
+        <div class="quiz-card">
+
+            <p id="questionNumber">
+                Question 1
+            </p>
+
+
+            <h2 id="question">
+                What is the Sanskrit word for "Water"?
+            </h2>
+
+
+            <div id="options">
+            </div>
+
+
+            <p id="quizResult">
+            </p>
+
+
+            <button
+                onclick="nextQuestion()"
+                class="next-btn">
+                Next Question →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+            🕉️ SanskritAI
+        </h3>
+
+        <p>
+            Learn • Practice • Understand Sanskrit
+        </p>
+
+        <p>
+            Made using HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
